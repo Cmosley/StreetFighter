@@ -62,8 +62,10 @@ body {
 }
 
 .how-to {
-	position: relative;
+	margin-top: 20px;
+	position: absolute;
+	z-index: 3;
 	left: 650px;
-	color: white;
+	color: black;
 	font-size: 24px;
 }

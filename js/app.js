@@ -29,24 +29,25 @@ $(document).ready(function() {
 	})
 
 	$(document).keydown(function(e) {
-		if(e.keycode == 88) {
-		alert("key pressed");
-		}
-	});
-		/*
-
-		if (e.keycode == 88) {
+		if (e.which == 88) {
      		$('.ryu-ready').hide();
+     		$('.ryu-throwing').hide();
      		$('.ryu-still').hide();
       		$('.ryu-cool').show();
-			}else{
-			$('.ryu-cool').hide();
-			$('.ryu-still').show();
-			}
-		});*/
-		
-});
+      	}
+	});
 
+	$(document).keyup(function(e) {
+		if (e.which == 88) {
+     		$('.ryu-ready').hide();
+     		$('.ryu-throwing').hide();
+     		$('.ryu-still').show();
+      		$('.ryu-cool').hide();
+			}
+	});
+	
+});
+		
 
 
 
