@@ -21,32 +21,34 @@ $(document).ready(function() {
 				$(this).hide();
 				$(this).css('left', '525px');
 			});
-	})	
+	})	 
 
 	.mouseup(function() {
 		$('.ryu-throwing').hide();
 		$('.ryu-ready').show();
-	});
-});
-		
+	})
 
-$(document).keydown(function(e) {
+	$(document).keydown(function(e) {
 	if (e.which == 88) {
      		$('.ryu-ready').hide();
      		$('.ryu-throwing').hide();
      		$('.ryu-still').hide();
       		$('.ryu-cool').show();
       	}
-});
+	});
 
-$(document).keyup(function(e) {
+	$(document).keyup(function(e) {
 		if (e.which == 88) {
      		$('.ryu-ready').hide();
      		$('.ryu-throwing').hide();
       		$('.ryu-cool').hide();
       		$('.ryu-still').show();
 			}
+	});
 });
+		
+
+
 
 function playHadouken () {
   $('#hadouken-sound')[0].volume = 0.5;
